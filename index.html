@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サンプルサイト（ヘッダーリンク付き）</title>
+    <style>
+        /* スタイリングの開始 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* 白背景 */
+        }
+
+        /* ヘッダー全体をリンクにするためのスタイル */
+        .header-link {
+            /* <a>タグをブロック要素にし、背景色と高さを設定 */
+            display: block;
+            background-color: #00bfff; /* 青色の背景 */
+            padding: 20px 10px;
+            text-decoration: none; /* リンクの下線を消す */
+            cursor: pointer; /* マウスカーソルをポインターに */
+        }
+
+        .header-bar {
+            color: white;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            /* 画像のテキストの輪郭（アウトライン）を再現 */
+            -webkit-text-stroke: 2px black;
+            text-stroke: 2px black;
+            text-shadow: 
+                -2px -2px 0 black,  
+                2px -2px 0 black,
+                -2px 2px 0 black,
+                2px 2px 0 black;
+        }
+
+        .text-main {
+            font-size: 50px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .text-sub {
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 50px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .link-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #696969; /* 濃い灰色の背景 */
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* ホバー時の効果（任意） */
+        .link-button:hover {
+            background-color: #808080;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <a href="ヘッダーのリンク先URLをここに設定" class="header-link">
+        <div class="header-bar">
+            <span class="text-main">テキスト</span>
+            <span class="text-sub">テキスト1テキスト2</span>
+        </div>
+    </a>
+
+    <div class="content">
+        <a href="リンク1のURLをここに設定" class="link-button">LINEスタンプ</a>
+        
+        <a href="リンク2のURLをここに設定" class="link-button">リンク2に飛ばす</a>
+    </div>
+
+</body>
+</html>
+
